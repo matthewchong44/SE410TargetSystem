@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <style>
+
+    .wrapper {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      text-align: center;
+    }
+    button {
+      width: 100px;
+      border: 2px solid black;
+      padding: 14px 28px;
+    }
+
+    .dropbtn {
+      width: 215px;
+    }
+
+    table {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+</style>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Target System</title>
+    <link href="/cardlayout.css" rel="stylesheet" type="text/css" />
+    <link href="/wrap.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="welcome.html">Welcome </a></li>
+          <li><a href="about.html">About </a></li>
+          <li><a href="account.html">Account </a></li>
+          <li><a href="search.html">Search </a></li>
+          <li><a href="admin.html">Admin </a></li>
+          <li><a href="/login/register.html">Login / Register</a></li>
+        </ul>
+      </nav>
+    </header>
+
+<br>
+<br>
+<div class="row">
+      <div class="column left"">
+        <h1>Search</h1>
+        <div class="wrapper">
+              <input type="text" id="searchTerm" placeholder="">
+              <button type="submit" id="searchButton" onclick="redirect()">Search
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+        <ul>
+            <p>
+            <div class="dropdown">
+            <div><button onclick="myFunction()" class="dropbtn">Categories</button></div>
+            <div id="myDropdown" class="dropdown-content">
+            <a href="categoryOne.html">Software Design</a>
+            <a href="categoryOne.html">Software Evolution</a>
+            <a href="categoryOne.html">Software Management</a>
+            <a href="categoryOne.html">Software Modeling and Analysis</a>
+            </div>
+            </div>
+          </p>
+        </ul>
+      </div>
+      <div class="column right"">
+        <h2> Modules</h2>
+        <table>
+          <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Submitter</th>
+            <th>Category</th>
+            <th>Date Submitted</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Design Patterns</td>
+            <td>John Smith</td>
+            <td>Software Design</td>
+            <td>08/27/18</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Software Maintenance</td>
+            <td>John Smith</td>
+            <td>Software Evolution</td>
+            <td>06/29/19</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Project Management Methodologies</td>
+            <td>Roland Mendel</td>
+            <td>Software Management</td>
+            <td>04/04/20</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Process Models</td>
+            <td>Helen Bennett</td>
+            <td>Software Modeling and Analysis</td>
+            <td>09/10/20</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <table>
+      <p>&copy; Copyright 2020 JK - This is an academic project and this is not a real company. </p>
+    </table>
+
+  </body>
+
+  <script>
+    function redirect() {
+      window.location.href = '/main/categoryOne.html';
+    }
+  </script>
+</html>

@@ -1,0 +1,176 @@
+/*body styles affect the whole page*/
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: white;
+}
+
+footer {
+ position:fixed;
+ bottom:0;
+}
+
+/*sets the navigation list and link styles*/
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #fff0f5;
+  background-color: #89b0ae;
+}
+
+input {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #89b0ae;
+}
+
+button {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #89b0ae;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+nav ul li a:hover:not(.active) {
+  background-color: #6c8c8b;
+}
+
+nav ul li a.active {
+  color: white;
+  background-color: #4CAF50;
+}
+
+/*set the card styles*/
+.card {
+  margin: 5px;
+  border: 1px solid #000000;
+  float: left;
+  width: 200px;
+}
+
+.card:hover {
+  border: 1px solid #777;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card h2 {
+  padding: 15px;
+  text-align: center;
+}
+
+.card p {
+  padding: 10px;
+}
+
+/*put a border around the footer*/
+footer {
+  clear: both;
+  border: thin solid black;
+}
+
+/* drop down css */
+.dropbtn {
+  background-color: #89b0ae;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #6c8c8b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px;
+}
+
+.left {
+  width: 25%;
+  border-right: 1px solid lightgray;
+}
+
+.right {
+  width: 75%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* table */
+
+table {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border-collapse: separate;
+  width: 100%;
+  border-spacing: 0 25x;
+}
+td {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+tr {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 30px;
+  border-spacing: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+li{
+  margin: 15px 0;
+  list-style-type: none;
+}

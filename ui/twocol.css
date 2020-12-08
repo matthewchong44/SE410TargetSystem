@@ -1,0 +1,68 @@
+/*body styles affect the whole page*/
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: black;
+  color: bisque;
+  margin: 0px;
+
+}
+header {
+  border: thin solid white;
+}
+/* sets the style for the list of links */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid orangered;
+  background-color: orange;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover:not(.active) {
+  background-color: #ff5555;
+}
+
+nav ul li a.active {
+  color: white;
+  background-color: #ff3333;
+}
+/*sets the two equal columns */
+#left {
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 40%;
+}
+#right {
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  float: right;
+  width: 40%;
+}
+/*sets the font and centers headlines*/
+h2 {
+  padding: 15px;
+  text-align: center;
+  font-family: 'Cooper Black', Impact, Arial, sans-serif;
+}
+
+/*sets a border on the footer*/
+footer {
+  clear: both;
+  border: thick outset red;
+}

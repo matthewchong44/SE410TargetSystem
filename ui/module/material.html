@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Target System</title>
+    <link href="/cardlayout.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/main/welcome.html">Welcome </a></li>
+          <li><a href="/main/about.html">About </a></li>
+          <li><a href="/main/account.html">Account </a></li>
+          <li><a href="/main/search.html">Search </a></li>
+          <li><a href="/main/admin.html">Admin</a></li>
+          <li><a href="/login/register.html">Login / Register</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="column left"">
+      <ul>
+        <li><a href="module.html">Module Information</a></li>
+        <li><a href="material.html">Materials</a></li>
+        <li><a href="references.html">References</a></li>
+        <li><a href="/main/submitterUsers.html">Misc</a></li>
+        <li><button onclick="goBack()" >Go Back</button></li>
+      </ul>
+    </div>
+
+
+    <div class="column right"">
+        <h2>Material Information</h2>
+        <table border-collapse:separate border-spacing:5em>
+          <tr>
+            <td>ID</td>
+            <td>Title</td>
+            <td>Author</td>
+            <td>Date Created</td>
+            <td>Action</td>
+  
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>Java Design Patterns</td>
+            <td>Alexandre Azoo</td>
+            <td>05/04/19</td>
+            <td>Action</td>
+
+          </tr>
+          <tr>
+            <td>18</td>
+            <td>Creational Design Patterns</td>
+            <td>Amy Wu</td>
+            <td>05/21/09</td>
+            <td>Action</td>
+          </tr>
+          <tr>
+            <td>23</td>
+            <td>Iterator Pattern</td>
+            <td>Rebecca Sutton</td>
+            <td>06/27/18</td>
+            <td>Action</td>
+          </tr>
+          <tr>
+            <td>31</td>
+            <td>Singleton Pattern</td>
+            <td>Anthony Powell</td>
+            <td>11/30/98</td>
+            <td>Action</td>
+          </tr>
+          <tr>
+            <td>40</td>
+            <td>Absract Factory Pattern</td>
+            <td>Reddington Keen</td>
+            <td>02/23/15</td>
+            <td>Action</td>
+          </tr>
+        </table>
+      </div>
+      
+    <script>
+      function goBack() {
+        window.location.href = '/main/submitterUsers.html';
+      }
+    </script>
+
+    <br>
+    <br>
+    <table>
+      <p>&copy; Copyright 2020 JK - This is an academic project and this is not a real company. </p>
+    </table>
+
+  </body>
+</html>
